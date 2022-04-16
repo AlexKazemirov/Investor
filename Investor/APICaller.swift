@@ -13,7 +13,7 @@ final class APICaller {
     
     var top_Crypto = [CryptoList]()
     
-    private struct Constants {
+    struct Constants {
         static let assetsEndPoint = "https://api.coingecko.com/api/v3/coins/"
     }
     
@@ -22,7 +22,7 @@ final class APICaller {
     }
     
     public func getAllCryptoData(completion: @escaping (Result<[CryptoList], Error>) -> Void) {
-        guard let url = URL(string: Constants.assetsEndPoint + "markets?vs_currency=usd")//&ids=bitcoin)
+        guard let url = URL(string: Constants.assetsEndPoint + "markets?vs_currency=usd&symbols=ton")//&ids=bitcoin, symbols=zam)
         else {
             return
         }

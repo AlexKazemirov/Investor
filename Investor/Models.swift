@@ -12,6 +12,7 @@ struct CryptoList: Codable {
     let symbol: String?
     let name: String?
     let image: String?
+    var isFavorite: Bool?
 }
 
 /*

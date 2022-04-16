@@ -7,12 +7,21 @@
 
 import UIKit
 
+struct CryptoTableViewCellViewModel {
+    let current_price: Double
+    let symbol: String
+    let name: String
+    let image: String
+    var isFavorite: Bool
+}
+
 class CryptoTableViewCell: UITableViewCell {
 
     @IBOutlet weak var tickerLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var logoLabel: UIImageView!
     @IBOutlet weak var priceLabel: UILabel!
+
     
     override func prepareForReuse() {
         super.prepareForReuse()
@@ -24,11 +33,11 @@ class CryptoTableViewCell: UITableViewCell {
     
     static let identifier = "CryptoTableViewCell"
     
-    func configure(with viewModel: CryptoList) {
+    func configure(with viewModel: CryptoTableViewCellViewModel) {
         nameLabel.text = viewModel.name
-        tickerLabel.text = viewModel.symbol!.uppercased()
-        priceLabel.text = String(viewModel.current_price!)
-        if let url = URL(string: "\(viewModel.image!)") {
+        tickerLabel.text = viewModel.symbol.uppercased()
+        priceLabel.text = String(viewModel.current_price)
+        if let url = URL(string: "\(viewModel.image)") {
             let task = URLSession.shared.dataTask(with: url) { [weak self] data, _, _ in
                 if let data = data {
                     DispatchQueue.main.async {
