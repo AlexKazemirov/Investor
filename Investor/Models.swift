@@ -7,6 +7,11 @@
 
 import Foundation
 
+struct SearchResponse: Codable {
+    var resultCount: Int
+    var results: [CryptoList]
+}
+
 struct CryptoList: Codable {
     let current_price: Double?
     let symbol: String?

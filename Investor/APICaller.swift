@@ -17,13 +17,10 @@ final class APICaller {
         static let assetsEndPoint = "https://api.coingecko.com/api/v3/coins/"
     }
     
-    private init() {
-        
-    }
-    
     public func getAllCryptoData(completion: @escaping (Result<[CryptoList], Error>) -> Void) {
-        guard let url = URL(string: Constants.assetsEndPoint + "markets?vs_currency=usd&symbols=ton")//&ids=bitcoin, symbols=zam)
-        else {
+        guard let url = URL(string: Constants.assetsEndPoint + "markets?vs_currency=usd&symbols") else {
+                //&ids=bitcoin, symbols=zam)
+        //guard let url = URL(string: Constants.assetsEndPoint + urlString) else {
             return
         }
         let task = URLSession.shared.dataTask(with: url) { data, _, error in
