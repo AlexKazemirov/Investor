@@ -13,7 +13,7 @@ struct CryptoTableViewCellViewModel {
     let name: String
     let image: String
     var isFavorite: Bool
-    var markIsHidden: Bool
+    var favMarkIsHidden = true
 }
 
 class CryptoTableViewCell: UITableViewCell {
@@ -26,11 +26,11 @@ class CryptoTableViewCell: UITableViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        
         tickerLabel.text = nil
         nameLabel.text = nil
         logoLabel.image = nil
         priceLabel.text = nil
-        favoriteMark.isHidden = true
         favoriteMark.image = nil
     }
     
@@ -38,8 +38,9 @@ class CryptoTableViewCell: UITableViewCell {
     
     func configure(with viewModel: CryptoTableViewCellViewModel) {
         
-        favoriteMark.isHidden = viewModel.markIsHidden
-        favoriteMark.image = UIImage(named: "heartIcon")
+        favoriteMark.isHidden = viewModel.favMarkIsHidden
+        print("is hidden in Configure:\(viewModel.favMarkIsHidden)")
+        favoriteMark.image = UIImage(named: "favoriteIcon")
         
         nameLabel.text = viewModel.name
         tickerLabel.text = viewModel.symbol.uppercased()
