@@ -40,7 +40,7 @@ class CryptoTableViewCell: UITableViewCell {
         
         favoriteMark.isHidden = viewModel.favMarkIsHidden
         print("is hidden in Configure:\(viewModel.favMarkIsHidden)")
-        favoriteMark.image = UIImage(named: "favoriteIcon")
+        favoriteMark.image = UIImage(named: "heartIcon")
         
         nameLabel.text = viewModel.name
         tickerLabel.text = viewModel.symbol.uppercased()
