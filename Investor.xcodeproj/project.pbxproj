@@ -10,7 +10,10 @@
 		3006805A28096ADC008B7465 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006805928096ADC008B7465 /* Models.swift */; };
 		3006805C28096CD3008B7465 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006805B28096CD3008B7465 /* CryptoTableViewCell.swift */; };
 		3006805E28098744008B7465 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006805D28098744008B7465 /* APICaller.swift */; };
-		302B2DBD28174046002853EA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302B2DBC28174046002853EA /* DetailViewController.swift */; };
+		30276BE3281A9E54009C7B8F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30276BE2281A9E54009C7B8F /* ProfileViewController.swift */; };
+		30276BE5281A9E63009C7B8F /* IdeasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30276BE4281A9E63009C7B8F /* IdeasViewController.swift */; };
+		30276BE7281A9E70009C7B8F /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30276BE6281A9E70009C7B8F /* EducationViewController.swift */; };
+		30276BE9281A9E8B009C7B8F /* WatchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30276BE8281A9E8B009C7B8F /* WatchListViewController.swift */; };
 		306DC53828095F65004FF115 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306DC53728095F65004FF115 /* AppDelegate.swift */; };
 		306DC53A28095F65004FF115 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306DC53928095F65004FF115 /* SceneDelegate.swift */; };
 		306DC53C28095F65004FF115 /* СryptoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306DC53B28095F65004FF115 /* СryptoListViewController.swift */; };
@@ -44,7 +47,10 @@
 		3006805928096ADC008B7465 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		3006805B28096CD3008B7465 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
 		3006805D28098744008B7465 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
-		302B2DBC28174046002853EA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		30276BE2281A9E54009C7B8F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		30276BE4281A9E63009C7B8F /* IdeasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeasViewController.swift; sourceTree = "<group>"; };
+		30276BE6281A9E70009C7B8F /* EducationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
+		30276BE8281A9E8B009C7B8F /* WatchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewController.swift; sourceTree = "<group>"; };
 		306DC53428095F65004FF115 /* Investor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Investor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		306DC53728095F65004FF115 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		306DC53928095F65004FF115 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +92,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30276BEA281A9FD8009C7B8F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				30276BE2281A9E54009C7B8F /* ProfileViewController.swift */,
+				30276BE4281A9E63009C7B8F /* IdeasViewController.swift */,
+				30276BE6281A9E70009C7B8F /* EducationViewController.swift */,
+				30276BE8281A9E8B009C7B8F /* WatchListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		306DC52B28095F65004FF115 = {
 			isa = PBXGroup;
 			children = (
@@ -114,7 +131,7 @@
 				306DC53B28095F65004FF115 /* СryptoListViewController.swift */,
 				3006805B28096CD3008B7465 /* CryptoTableViewCell.swift */,
 				306DC53D28095F65004FF115 /* Main.storyboard */,
-				302B2DBC28174046002853EA /* DetailViewController.swift */,
+				30276BEA281A9FD8009C7B8F /* ViewControllers */,
 				3006805928096ADC008B7465 /* Models.swift */,
 				3006805D28098744008B7465 /* APICaller.swift */,
 				306DC54328095F67004FF115 /* Assets.xcassets */,
@@ -276,11 +293,14 @@
 				306DC53C28095F65004FF115 /* СryptoListViewController.swift in Sources */,
 				306DC53828095F65004FF115 /* AppDelegate.swift in Sources */,
 				3006805C28096CD3008B7465 /* CryptoTableViewCell.swift in Sources */,
+				30276BE5281A9E63009C7B8F /* IdeasViewController.swift in Sources */,
 				3006805E28098744008B7465 /* APICaller.swift in Sources */,
 				306DC53A28095F65004FF115 /* SceneDelegate.swift in Sources */,
 				306DC54228095F65004FF115 /* Investor.xcdatamodeld in Sources */,
+				30276BE3281A9E54009C7B8F /* ProfileViewController.swift in Sources */,
+				30276BE7281A9E70009C7B8F /* EducationViewController.swift in Sources */,
 				3006805A28096ADC008B7465 /* Models.swift in Sources */,
-				302B2DBD28174046002853EA /* DetailViewController.swift in Sources */,
+				30276BE9281A9E8B009C7B8F /* WatchListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

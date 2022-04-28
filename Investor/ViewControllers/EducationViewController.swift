@@ -1,16 +1,18 @@
 //
-//  DetailViewController.swift
+//  EducationViewController.swift
 //  Investor
 //
-//  Created by Алексей Каземиров on 4/25/22.
+//  Created by Алексей Каземиров on 4/28/22.
 //
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class EducationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = .systemBlue
 
         // Do any additional setup after loading the view.
     }
