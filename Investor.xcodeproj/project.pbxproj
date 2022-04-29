@@ -95,10 +95,10 @@
 		30276BEA281A9FD8009C7B8F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				30276BE2281A9E54009C7B8F /* ProfileViewController.swift */,
 				30276BE4281A9E63009C7B8F /* IdeasViewController.swift */,
-				30276BE6281A9E70009C7B8F /* EducationViewController.swift */,
 				30276BE8281A9E8B009C7B8F /* WatchListViewController.swift */,
+				30276BE6281A9E70009C7B8F /* EducationViewController.swift */,
+				30276BE2281A9E54009C7B8F /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -482,6 +482,7 @@
 				DEVELOPMENT_TEAM = SC63T9624N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Investor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = 300$;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -510,6 +511,7 @@
 				DEVELOPMENT_TEAM = SC63T9624N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Investor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = 300$;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
