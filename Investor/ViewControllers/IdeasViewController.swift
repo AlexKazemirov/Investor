@@ -20,6 +20,8 @@ class IdeasViewController: UIViewController {
     func settingsTabBar() {
         tabBarController?.tabBar.tintColor = .white
         tabBarController?.tabBar.unselectedItemTintColor = .black
+        tabBarController?.tabBar.backgroundColor = .systemPurple
+        tabBarController?.tabBar.alpha = 0.5
     }
     
 }
