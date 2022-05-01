@@ -9,8 +9,8 @@ import UIKit
 
 class IdeasViewController: UIViewController {
     
-    @IBOutlet weak var showStocks: UIButton!
-    @IBOutlet weak var showPortfolios: UIButton!
+    @IBOutlet weak var stocksBtn: UIButton!
+    @IBOutlet weak var portfoliosBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,6 @@ class IdeasViewController: UIViewController {
     @IBAction func showPortfolios(_ sender: UIButton) {
         performSegue(withIdentifier: "showPortfolios", sender: nil)
     }
-    
     
 }
 

@@ -18,13 +18,14 @@ class TabBarController: UITabBarController {
     
     
     func settingsTabBar() {
-        tabBar.tintColor = #colorLiteral(red: 1, green: 0.8495922685, blue: 0.2030095756, alpha: 1)
-        tabBar.unselectedItemTintColor = .white
-        tabBar.backgroundColor = .gray
+        tabBar.tintColor = .blue
+        tabBar.unselectedItemTintColor = .black
+        tabBar.backgroundColor = .white
 
-        let lineView = UIView(frame: CGRect(x: 0, y: 0, width: tabBar.frame.size.width, height: 2))
-        lineView.backgroundColor = .white
+        let lineView = UIView(frame: CGRect(x: 0, y: 0, width: tabBar.frame.size.width, height: 1))
+        lineView.backgroundColor = .black
         tabBar.addSubview(lineView)
+        tabBar.alpha = 1
         
     }
 }
