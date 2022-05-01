@@ -17,9 +17,10 @@ class AuthViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = #colorLiteral(red: 0.5308967829, green: 0.6930128336, blue: 1, alpha: 1)
+        view.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
         
         setupTextFields()
+        
     }
     
     func setupTextFields() {
@@ -89,10 +90,14 @@ class AuthViewController: UIViewController {
     }
     
     @IBAction func btnOk(_ sender: UIButton) {
-        let alert = UIAlertController(title: "Your data", message: "Login: \(loginTextField.text ?? "")\nPassword: \(passwordTextField.text ?? "")", preferredStyle: .alert)
-        let ok = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alert.addAction(ok)
-        self.present(alert, animated: true, completion: nil)
+//        let alert = UIAlertController(title: "Your data", message: "Login: \(loginTextField.text ?? "")\nPassword: \(passwordTextField.text ?? "")", preferredStyle: .alert)
+//        let ok = UIAlertAction(title: "OK", style: .default, handler: nil)
+//        alert.addAction(ok)
+//        self.present(alert, animated: true, completion: nil)
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyboard.instantiateViewController(withIdentifier: "tabBarController") as! TabBarController
+                self.present(newViewController, animated: true, completion: nil)
     }
 
 }

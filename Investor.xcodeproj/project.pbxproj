@@ -10,6 +10,7 @@
 		3006805A28096ADC008B7465 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006805928096ADC008B7465 /* Models.swift */; };
 		3006805C28096CD3008B7465 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006805B28096CD3008B7465 /* CryptoTableViewCell.swift */; };
 		3006805E28098744008B7465 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006805D28098744008B7465 /* APICaller.swift */; };
+		30234039281E8BB400EFF92F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30234038281E8BB400EFF92F /* TabBarController.swift */; };
 		30276BE3281A9E54009C7B8F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30276BE2281A9E54009C7B8F /* ProfileViewController.swift */; };
 		30276BE5281A9E63009C7B8F /* IdeasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30276BE4281A9E63009C7B8F /* IdeasViewController.swift */; };
 		30276BE7281A9E70009C7B8F /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30276BE6281A9E70009C7B8F /* EducationViewController.swift */; };
@@ -49,6 +50,7 @@
 		3006805928096ADC008B7465 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		3006805B28096CD3008B7465 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
 		3006805D28098744008B7465 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		30234038281E8BB400EFF92F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		30276BE2281A9E54009C7B8F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		30276BE4281A9E63009C7B8F /* IdeasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeasViewController.swift; sourceTree = "<group>"; };
 		30276BE6281A9E70009C7B8F /* EducationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		30276BEA281A9FD8009C7B8F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				30234038281E8BB400EFF92F /* TabBarController.swift */,
 				30716BA7281CA0790085CD1E /* AuthSwiftUI.swift */,
 				30716BA5281C9E0F0085CD1E /* AuthViewController.swift */,
 				30276BE4281A9E63009C7B8F /* IdeasViewController.swift */,
@@ -307,6 +310,7 @@
 				30276BE3281A9E54009C7B8F /* ProfileViewController.swift in Sources */,
 				30276BE7281A9E70009C7B8F /* EducationViewController.swift in Sources */,
 				3006805A28096ADC008B7465 /* Models.swift in Sources */,
+				30234039281E8BB400EFF92F /* TabBarController.swift in Sources */,
 				30716BA8281CA0790085CD1E /* AuthSwiftUI.swift in Sources */,
 				30276BE9281A9E8B009C7B8F /* WatchListViewController.swift in Sources */,
 			);
