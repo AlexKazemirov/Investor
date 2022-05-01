@@ -101,8 +101,8 @@
 		30276BEA281A9FD8009C7B8F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				30234038281E8BB400EFF92F /* TabBarController.swift */,
 				30716BA7281CA0790085CD1E /* AuthSwiftUI.swift */,
+				30234038281E8BB400EFF92F /* TabBarController.swift */,
 				30716BA5281C9E0F0085CD1E /* AuthViewController.swift */,
 				30276BE4281A9E63009C7B8F /* IdeasViewController.swift */,
 				30276BE8281A9E8B009C7B8F /* WatchListViewController.swift */,

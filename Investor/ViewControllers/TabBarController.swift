@@ -8,22 +8,22 @@
 import UIKit
 
 class TabBarController: UITabBarController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        settingsTabBar()
     }
     
+    
+    func settingsTabBar() {
+        tabBar.tintColor = #colorLiteral(red: 1, green: 0.8495922685, blue: 0.2030095756, alpha: 1)
+        tabBar.unselectedItemTintColor = .white
+        tabBar.backgroundColor = .white
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let lineView = UIView(frame: CGRect(x: 0, y: 0, width: tabBar.frame.size.width, height: 2))
+        lineView.backgroundColor = .white
+        tabBar.addSubview(lineView)
+        
     }
-    */
-
 }
