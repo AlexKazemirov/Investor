@@ -38,7 +38,6 @@ class CryptoTableViewCell: UITableViewCell {
     
     func configure(with viewModel: CryptoTableViewCellViewModel) {
         favoriteMark.isHidden = viewModel.favMarkIsHidden
-        print("is hidden in Configure:\(viewModel.favMarkIsHidden)")
         favoriteMark.image = UIImage(named: "favoriteIcon")
         
         nameLabel.text = viewModel.name

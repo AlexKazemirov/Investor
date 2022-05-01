@@ -21,14 +21,6 @@ class ProfileViewController: UIViewController {
         setupConstraints()
     }
     
-
-    @IBAction func registrationButton(_ sender: UIButton) {
-
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let newViewController = storyboard.instantiateViewController(withIdentifier: "AuthViewController") as! AuthViewController
-                self.present(newViewController, animated: true, completion: nil)
-    }
-    
     func setupView() {
         imageProfile.image = UIImage(named: "userImage")
         
@@ -39,7 +31,7 @@ class ProfileViewController: UIViewController {
         registrationButton.layer.borderWidth = 1
         registrationButton.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
     }
-    
+
     func setupConstraints() {
         
         imageProfile.translatesAutoresizingMaskIntoConstraints = false
@@ -56,6 +48,18 @@ class ProfileViewController: UIViewController {
         let xRegBtn = registrationButton.centerXAnchor.constraint(equalTo: imageProfile.centerXAnchor, constant: 0)
         
         NSLayoutConstraint.activate([heightImage, widthImage, topImage, xImage, topRegBtn, xRegBtn])
+    }
+    
+    
+    @IBAction func registrationButton(_ sender: UIButton) {
+
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyboard.instantiateViewController(withIdentifier: "AuthViewController") as! AuthViewController
+                self.present(newViewController, animated: true, completion: nil)
+    }
+    
+    @IBAction func settingsBtn(_ sender: Any) {
+
     }
     
     @IBAction func unwind( _ seg: UIStoryboardSegue) {
