@@ -14,7 +14,7 @@ class EducationViewController: UIViewController {
         
         //view.backgroundColor = #colorLiteral(red: 0.5308967829, green: 0.6930128336, blue: 1, alpha: 1)
         //view.backgroundColor = UIColor(named: "backgroundColor")
-        view.backgroundColor = .white
+        view.backgroundColor = .systemGray4
 
     }
 

@@ -14,6 +14,8 @@ class IdeasViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = #colorLiteral(red: 0.9032096267, green: 0.9032096267, blue: 0.9032096267, alpha: 1)
         //view.backgroundColor = #colorLiteral(red: 0.5308967829, green: 0.6930128336, blue: 1, alpha: 1)
         //view.backgroundColor = UIColor(named: "backgroundColor")
         
