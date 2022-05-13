@@ -9,27 +9,30 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
-    @IBOutlet weak var registrationButton: UIButton!
-    @IBOutlet weak var imageProfile: UIImageView!
+    @IBOutlet weak var registrationButton: UIButton! {
+        didSet {
+            registrationButton.backgroundColor = .green
+            registrationButton.layer.shadowOffset = CGSize(width: 0, height: 5)
+            registrationButton.layer.shadowOpacity = 0.5
+            registrationButton.layer.shadowRadius = 5
+            
+            registrationButton.setTitle("Регистрация", for: .normal)
+            registrationButton.tintColor = .black
+            registrationButton.layer.cornerRadius = 10
+        }
+    }
+    @IBOutlet weak var imageProfile: UIImageView! {
+        didSet {
+            imageProfile.image = UIImage(named: "userImage")
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //view.backgroundColor = #colorLiteral(red: 0.5308967829, green: 0.6930128336, blue: 1, alpha: 1)
         //view.backgroundColor = UIColor(named: "backgroundColor")
         
-        setupView()
         setupConstraints()
-    }
-    
-    func setupView() {
-        imageProfile.image = UIImage(named: "userImage")
-        
-        registrationButton.backgroundColor = .gray
-        registrationButton.setTitle("Регистрация", for: .normal)
-        registrationButton.tintColor = .white
-        registrationButton.layer.cornerRadius = 10
-        registrationButton.layer.borderWidth = 1
-        registrationButton.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
     }
 
     func setupConstraints() {
