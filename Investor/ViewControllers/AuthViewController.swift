@@ -9,16 +9,42 @@ import UIKit
 
 class AuthViewController: UIViewController {
 
-    @IBOutlet weak var btnOk: UIButton!
-    let loginTextField = UITextField()
-    let passwordTextField = UITextField()
-    let titleLbl = UILabel()
+    @IBOutlet weak var btnOk: UIButton! {
+        didSet {
+            btnOk.backgroundColor = .white
+            btnOk.layer.cornerRadius = 10
+            btnOk.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+            btnOk.layer.borderWidth = 2
+            btnOk.setTitle("Go!", for: .normal)
+            
+            btnOk.layer.shadowRadius = 5
+            btnOk.layer.shadowOffset = CGSize(width: 0, height: 5)
+            btnOk.layer.shadowOpacity = 0.5
+        }
+    }
+    var loginTextField = UITextField() {
+        didSet {
+    
+        }
+    }
+    var passwordTextField = UITextField() {
+        didSet {
+            
+        }
+    }
+    var titleLbl = UILabel() {
+        didSet {
+            titleLbl.text = "Register your account!"
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = .white
         
+        loginTextField.setOptions(bgColor: .white, cornerRadius: 10, placeholder: "Login", isSecureText: false)
+        loginTextField.indent(size: 10)
         setupTextFields()
         
     }
@@ -27,15 +53,11 @@ class AuthViewController: UIViewController {
         
         //MARK: LoginTF
         
-        titleLbl.text = "Register your account!"
+        
         view.addSubview(titleLbl)
         titleLbl.translatesAutoresizingMaskIntoConstraints = false
         titleLbl.center = btnOk.center
-        
-        
-        loginTextField.setOptions(bgColor: .white, cornerRadius: 10, placeholder: "Login", isSecureText: false)
-        loginTextField.indent(size: 10)
-        
+  
         view.addSubview(loginTextField)
         
         loginTextField.translatesAutoresizingMaskIntoConstraints = false
@@ -72,12 +94,6 @@ class AuthViewController: UIViewController {
         NSLayoutConstraint.activate([topLbl, leftLbl, rightLbl])
         
         btnOk.translatesAutoresizingMaskIntoConstraints = false
-        
-        btnOk.backgroundColor = .white
-        btnOk.layer.cornerRadius = 10
-        btnOk.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        btnOk.layer.borderWidth = 2
-        btnOk.setTitle("Go!", for: .normal)
 
         let heightBtn = btnOk.heightAnchor.constraint(equalToConstant: 30)
         let leftBtn = btnOk.leftAnchor.constraint(equalTo: passwordTextField.leftAnchor, constant: 110)
@@ -86,7 +102,6 @@ class AuthViewController: UIViewController {
         
         
         NSLayoutConstraint.activate([heightBtn, leftBtn, rightBtn, topBtn])
-        
     }
     
     @IBAction func btnOk(_ sender: UIButton) {
