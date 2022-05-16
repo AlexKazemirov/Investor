@@ -9,15 +9,38 @@ import UIKit
 
 class IdeasViewController: UIViewController {
     
-    @IBOutlet weak var stocksBtn: UIButton!
-    @IBOutlet weak var portfoliosBtn: UIButton!
+    @IBOutlet weak var stocksBtn: UIButton! {
+        didSet {
+            stocksBtn.backgroundColor = .blue
+            stocksBtn.layer.shadowOffset = CGSize(width: 0, height: 5)
+            stocksBtn.layer.shadowOpacity = 0.5
+            stocksBtn.layer.shadowRadius = 5
+            
+            stocksBtn.setTitle("Рекомендуемые акции", for: .normal)
+            stocksBtn.tintColor = .white
+            stocksBtn.layer.cornerRadius = 10
+        }
+    }
+    
+    @IBOutlet weak var portfoliosBtn: UIButton! {
+        didSet {
+            portfoliosBtn.backgroundColor = .purple
+            portfoliosBtn.layer.shadowOffset = CGSize(width: 0, height: 5)
+            portfoliosBtn.layer.shadowOpacity = 0.5
+            portfoliosBtn.layer.shadowRadius = 5
+            
+            portfoliosBtn.setTitle("Варианты портфелей", for: .normal)
+            portfoliosBtn.tintColor = .white
+            portfoliosBtn.layer.cornerRadius = 10
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //view.backgroundColor = #colorLiteral(red: 0.9032096267, green: 0.9032096267, blue: 0.9032096267, alpha: 1)
-        gradient.frame = view.bounds
-        view.layer.addSublayer(gradient)
+//        gradient.frame = view.bounds
+//        view.layer.addSublayer(gradient)
         //UIImage(named: "bgMoneyImage")
         //view.backgroundColor = #colorLiteral(red: 0.5308967829, green: 0.6930128336, blue: 1, alpha: 1)
         //view.backgroundColor = UIColor(named: "backgroundColor")
