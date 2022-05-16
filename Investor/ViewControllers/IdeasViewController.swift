@@ -38,29 +38,7 @@ class IdeasViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //view.backgroundColor = #colorLiteral(red: 0.9032096267, green: 0.9032096267, blue: 0.9032096267, alpha: 1)
-//        gradient.frame = view.bounds
-//        view.layer.addSublayer(gradient)
-        //UIImage(named: "bgMoneyImage")
-        //view.backgroundColor = #colorLiteral(red: 0.5308967829, green: 0.6930128336, blue: 1, alpha: 1)
-        //view.backgroundColor = UIColor(named: "backgroundColor")
-        
     }
-    
-    lazy var gradient: CAGradientLayer = {
-        let gradient = CAGradientLayer()
-        gradient.type = .axial
-        gradient.colors = [
-            UIColor.white.cgColor,
-            UIColor.blue.cgColor,
-            UIColor.black.cgColor                       
-            //            UIColor.red.cgColor,
-            //            UIColor.purple.cgColor,
-            //            UIColor.cyan.cgColor
-        ]
-        gradient.locations = [0, 0.5, 1]
-        return gradient
-    }()
     
     @IBAction func showStocks(_ sender: UIButton) {
         performSegue(withIdentifier: "showStocks", sender: nil)
