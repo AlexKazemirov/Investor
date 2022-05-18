@@ -9,6 +9,15 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    var gradientLayer: CAGradientLayer! {
+        didSet {
+            gradientLayer.startPoint = CGPoint(x: 0, y: 0)
+            gradientLayer.endPoint = CGPoint(x: 1, y: 1)
+            gradientLayer.colors = [UIColor.purple.cgColor, UIColor.blue.cgColor]
+            
+        }
+    }
+    
     @IBOutlet weak var registrationButton: UIButton! {
         didSet {
             registrationButton.backgroundColor = .green
@@ -27,10 +36,15 @@ class ProfileViewController: UIViewController {
         }
     }
     
+    override func viewDidLayoutSubviews() {
+        gradientLayer.frame = CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: self.view.bounds.size.height)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //view.backgroundColor = #colorLiteral(red: 0.5308967829, green: 0.6930128336, blue: 1, alpha: 1)
-        //view.backgroundColor = UIColor(named: "backgroundColor")
+        
+        gradientLayer = CAGradientLayer()
+        view.layer.insertSublayer(gradientLayer, at: 0)
         
         setupConstraints()
     }

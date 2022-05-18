@@ -50,4 +50,3 @@ class IdeasViewController: UIViewController {
     
     
 }
-
