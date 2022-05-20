@@ -75,11 +75,4 @@ class ProfileViewController: UIViewController {
         let newViewController = storyboard.instantiateViewController(withIdentifier: "AuthViewController") as! AuthViewController
                 self.present(newViewController, animated: true, completion: nil)
     }
-    
-    @IBAction func settingsBtn(_ sender: Any) {
-        
-    }
-    
-    @IBAction func unwind( _ seg: UIStoryboardSegue) {
-    }
 }

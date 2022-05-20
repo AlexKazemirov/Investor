@@ -72,14 +72,15 @@ class IdeasViewController: UIViewController {
         portfoliosBtn.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
+            stocksBtn.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -60),
             stocksBtn.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 70),
             stocksBtn.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -70),
-            stocksBtn.topAnchor.constraint(equalTo: view.topAnchor, constant: 300),
-            stocksBtn.heightAnchor.constraint(equalToConstant: 70),
+            //stocksBtn.topAnchor.constraint(equalTo: view.topAnchor, constant: 300),
+            stocksBtn.heightAnchor.constraint(equalToConstant: 60),
             
             portfoliosBtn.leftAnchor.constraint(equalTo: stocksBtn.leftAnchor),
             portfoliosBtn.rightAnchor.constraint(equalTo: stocksBtn.rightAnchor),
-            portfoliosBtn.topAnchor.constraint(equalTo: stocksBtn.bottomAnchor, constant: 50),
+            portfoliosBtn.topAnchor.constraint(equalTo: stocksBtn.bottomAnchor, constant: 60),
             portfoliosBtn.heightAnchor.constraint(equalTo: stocksBtn.heightAnchor)
         ])
     }
