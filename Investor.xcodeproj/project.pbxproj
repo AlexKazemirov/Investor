@@ -27,6 +27,7 @@
 		306DC55E28095F67004FF115 /* InvestorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306DC55D28095F67004FF115 /* InvestorUITestsLaunchTests.swift */; };
 		30716BA6281C9E0F0085CD1E /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30716BA5281C9E0F0085CD1E /* AuthViewController.swift */; };
 		30716BA8281CA0790085CD1E /* AuthSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30716BA7281CA0790085CD1E /* AuthSwiftUI.swift */; };
+		30984D09283C2E430002F69C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30984D08283C2E430002F69C /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		306DC55D28095F67004FF115 /* InvestorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		30716BA5281C9E0F0085CD1E /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		30716BA7281CA0790085CD1E /* AuthSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSwiftUI.swift; sourceTree = "<group>"; };
+		30984D08283C2E430002F69C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				306DC53928095F65004FF115 /* SceneDelegate.swift */,
 				306DC53D28095F65004FF115 /* Main.storyboard */,
 				30276BEA281A9FD8009C7B8F /* ViewControllers */,
+				30984D08283C2E430002F69C /* Constants.swift */,
 				3006805928096ADC008B7465 /* Models.swift */,
 				3006805B28096CD3008B7465 /* CryptoTableViewCell.swift */,
 				3006805D28098744008B7465 /* APICaller.swift */,
@@ -304,6 +307,7 @@
 				3006805C28096CD3008B7465 /* CryptoTableViewCell.swift in Sources */,
 				30276BE5281A9E63009C7B8F /* IdeasViewController.swift in Sources */,
 				30716BA6281C9E0F0085CD1E /* AuthViewController.swift in Sources */,
+				30984D09283C2E430002F69C /* Constants.swift in Sources */,
 				3006805E28098744008B7465 /* APICaller.swift in Sources */,
 				306DC53A28095F65004FF115 /* SceneDelegate.swift in Sources */,
 				306DC54228095F65004FF115 /* Investor.xcdatamodeld in Sources */,

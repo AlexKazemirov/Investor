@@ -9,16 +9,6 @@ import UIKit
 
 class IdeasViewController: UIViewController {
     
-    var gradientLayer: CAGradientLayer! {
-        didSet {
-            gradientLayer.startPoint = CGPoint(x: 0, y: 0)
-            gradientLayer.endPoint = CGPoint(x: 1, y: 1)
-            let startColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1).cgColor
-            let endColor = #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1).cgColor
-            gradientLayer.colors = [startColor, endColor]
-        }
-    }
-    
     @IBOutlet weak var stocksBtn: UIButton! {
         didSet {
             stocksBtn.backgroundColor = .blue
@@ -46,14 +36,14 @@ class IdeasViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
-        gradientLayer.frame = CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: self.view.bounds.size.height)
+        Constants.gradientLayer.frame = CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: self.view.bounds.size.height)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        gradientLayer = CAGradientLayer()
-        view.layer.insertSublayer(gradientLayer, at: 0)
+        Constants.gradientLayer = CAGradientLayer()
+        view.layer.insertSublayer(Constants.gradientLayer, at: 0)
         
         setupConstraints()
         
