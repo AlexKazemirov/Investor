@@ -9,7 +9,7 @@ import UIKit
 
 class IdeasViewController: UIViewController {
     
-    var gradientLayer: CAGradientLayer! {
+    public var gradientLayer: CAGradientLayer! {
         didSet {
             gradientLayer.startPoint = CGPoint(x: 0, y: 0)
             gradientLayer.endPoint = CGPoint(x: 1, y: 1)
