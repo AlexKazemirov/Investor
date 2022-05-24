@@ -105,7 +105,9 @@ class AuthViewController: UIViewController {
     }
     
     @IBAction func btnOk(_ sender: UIButton) {
-        performSegue(withIdentifier: "toAuth", sender: self)
+        guard let login = loginTextField.text, let password = passwordTextField.text else {return}
+        print("Login: \(login),\nPassword: \(password)")
+        dismiss(animated: true, completion: nil)
     }
 
 }

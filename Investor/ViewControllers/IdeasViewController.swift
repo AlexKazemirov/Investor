@@ -16,7 +16,7 @@ class IdeasViewController: UIViewController {
             stocksBtn.layer.shadowOpacity = 0.5
             stocksBtn.layer.shadowRadius = 5
             
-            stocksBtn.setTitle("Рекомендуемые акции", for: .normal)
+            stocksBtn.setTitle("Подобрать акции", for: .normal)
             stocksBtn.tintColor = .white
             stocksBtn.layer.cornerRadius = 10
         }
@@ -29,7 +29,7 @@ class IdeasViewController: UIViewController {
             portfoliosBtn.layer.shadowOpacity = 0.5
             portfoliosBtn.layer.shadowRadius = 5
             
-            portfoliosBtn.setTitle("Варианты портфелей", for: .normal)
+            portfoliosBtn.setTitle("Собрать портфель", for: .normal)
             portfoliosBtn.tintColor = .white
             portfoliosBtn.layer.cornerRadius = 10
         }

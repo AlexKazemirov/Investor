@@ -5,6 +5,8 @@
 //  Created by Алексей Каземиров on 4/28/22.
 //
 
+// Обучение для новичков (коллекцией список уроков как в тинькофф)
+
 import UIKit
 
 class EducationViewController: UIViewController {

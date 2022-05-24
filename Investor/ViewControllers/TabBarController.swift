@@ -29,7 +29,3 @@ class TabBarController: UITabBarController {
         
     }
 }
-
-extension UIViewController {
-    
-}

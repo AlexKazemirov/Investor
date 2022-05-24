@@ -5,6 +5,8 @@
 //  Created by Алексей Каземиров on 4/28/22.
 //
 
+//Watchlist из предыдущего таба
+
 import UIKit
 
 class WatchListViewController: UIViewController {
