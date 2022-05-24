@@ -26,7 +26,6 @@
 		306DC55C28095F67004FF115 /* InvestorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306DC55B28095F67004FF115 /* InvestorUITests.swift */; };
 		306DC55E28095F67004FF115 /* InvestorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306DC55D28095F67004FF115 /* InvestorUITestsLaunchTests.swift */; };
 		30716BA6281C9E0F0085CD1E /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30716BA5281C9E0F0085CD1E /* AuthViewController.swift */; };
-		30716BA8281CA0790085CD1E /* AuthSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30716BA7281CA0790085CD1E /* AuthSwiftUI.swift */; };
 		30984D09283C2E430002F69C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30984D08283C2E430002F69C /* Constants.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,7 +70,6 @@
 		306DC55B28095F67004FF115 /* InvestorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestorUITests.swift; sourceTree = "<group>"; };
 		306DC55D28095F67004FF115 /* InvestorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		30716BA5281C9E0F0085CD1E /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
-		30716BA7281CA0790085CD1E /* AuthSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSwiftUI.swift; sourceTree = "<group>"; };
 		30984D08283C2E430002F69C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,7 +101,6 @@
 		30276BEA281A9FD8009C7B8F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				30716BA7281CA0790085CD1E /* AuthSwiftUI.swift */,
 				30234038281E8BB400EFF92F /* TabBarController.swift */,
 				30276BE4281A9E63009C7B8F /* IdeasViewController.swift */,
 				306DC53B28095F65004FF115 /* СryptoListViewController.swift */,
@@ -315,7 +312,6 @@
 				30276BE7281A9E70009C7B8F /* EducationViewController.swift in Sources */,
 				3006805A28096ADC008B7465 /* Models.swift in Sources */,
 				30234039281E8BB400EFF92F /* TabBarController.swift in Sources */,
-				30716BA8281CA0790085CD1E /* AuthSwiftUI.swift in Sources */,
 				30276BE9281A9E8B009C7B8F /* WatchListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

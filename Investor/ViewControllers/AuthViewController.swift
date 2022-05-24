@@ -106,7 +106,7 @@ class AuthViewController: UIViewController {
     
     @IBAction func btnOk(_ sender: UIButton) {
         guard let login = loginTextField.text, let password = passwordTextField.text else {return}
-        print("Login: \(login),\nPassword: \(password)")
+        print("Login: \(login)\nPassword: \(password)")
         dismiss(animated: true, completion: nil)
     }
 
