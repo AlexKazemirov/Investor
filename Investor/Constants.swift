@@ -20,6 +20,13 @@ struct Constants {
             gradientLayer.colors = [startColor, endColor]
         }
     }
+    static func setGradient(view: UIView, viewController: UIViewController) {
+        Constants.gradientLayer = CAGradientLayer()
+        view.layer.insertSublayer(Constants.gradientLayer, at: 0)
+        func viewDidLayoutSubviews() {
+            Constants.gradientLayer.frame = CGRect(x: 0, y: 0, width: view.bounds.size.width, height: view.bounds.size.height)
+        }
+    }
     
     
 }
