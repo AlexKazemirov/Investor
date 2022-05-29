@@ -27,15 +27,14 @@ class ProfileViewController: UIViewController {
         }
     }
     
-    override func viewDidLayoutSubviews() {
-        Constants.gradientLayer.frame = CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: self.view.bounds.size.height)
-    }
+//    override func viewDidLayoutSubviews() {
+//        Constants.gradientLayer.frame = CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: self.view.bounds.size.height)
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Constants.gradientLayer = CAGradientLayer()
-        view.layer.insertSublayer(Constants.gradientLayer, at: 0)
+        Constants.setGradient(view)
         
         setupConstraints()
     }

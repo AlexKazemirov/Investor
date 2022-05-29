@@ -47,10 +47,10 @@ class AuthViewController: UIViewController {
         loginTextField.indent(size: 10)
         setupTextFields()
         
+        Constants.setGradient(view, startColor: .yellow, endColor: .black)
     }
     
     func setupTextFields() {
-        
         //MARK: LoginTF
         
         
@@ -119,6 +119,7 @@ extension UITextField {
     }
     
     func setOptions(bgColor: UIColor, cornerRadius: CGFloat, placeholder: String, isSecureText: Bool){
+        Constants.setGradient(self)
         self.backgroundColor = bgColor
         self.layer.cornerRadius = cornerRadius
         self.placeholder = placeholder
