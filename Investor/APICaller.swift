@@ -18,11 +18,7 @@ final class APICaller {
     }
     
     public func getAllCryptoData(completion: @escaping (Result<[CryptoList], Error>) -> Void) {
-        guard let url = URL(string: Constants.assetsEndPoint + "markets?vs_currency=usd&symbols") else {
-                //&ids=bitcoin, symbols=zam)
-        //guard let url = URL(string: Constants.assetsEndPoint + urlString) else {
-            return
-        }
+        guard let url = URL(string: Constants.assetsEndPoint + "markets?vs_currency=usd&symbols") else {return}
         let task = URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data = data, error == nil else {
                 return

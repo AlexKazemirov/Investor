@@ -18,12 +18,18 @@ class WatchListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setOptions()
+        
         Constants.gradientLayer = CAGradientLayer()
         view.layer.insertSublayer(Constants.gradientLayer, at: 0)
 
         //view.backgroundColor = #colorLiteral(red: 0.5308967829, green: 0.6930128336, blue: 1, alpha: 1)
         //view.backgroundColor = UIColor(named: "backgroundColor")
         //view.backgroundColor = .white
+    }
+    
+    func setOptions() {
+        self.navigationItem.title = "Watchlist"
     }
     
 
