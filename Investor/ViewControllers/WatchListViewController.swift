@@ -26,10 +26,12 @@ class WatchListViewController: UIViewController {
         setOptions()
         Constants.setGradient(view)
         setConstraints()
+        
+        tableView.isHidden = true
     }
     
     func setOptions() {
-        self.navigationItem.title = "Watchlist"
+        self.navigationItem.title = "Избранное"
     }
     
     func setConstraints() {
