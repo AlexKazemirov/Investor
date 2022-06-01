@@ -19,7 +19,7 @@ struct Constants {
     //            gradientLayer.colors = [startColor, endColor]
     //        }
     //    }
-    static func setGradient(_ view: UIView, startColor: UIColor = #colorLiteral(red: 0.6470617056, green: 0.5934089422, blue: 1, alpha: 1), endColor: UIColor = #colorLiteral(red: 0.0999873206, green: 0.1936445236, blue: 1, alpha: 1)) {
+    static func setGradient(_ view: UIView, startColor: UIColor = #colorLiteral(red: 0.6357049346, green: 0.4528854489, blue: 0.8114129901, alpha: 1), endColor: UIColor = #colorLiteral(red: 0.0999873206, green: 0.1936445236, blue: 1, alpha: 1)) {
         let colorTop =  startColor.cgColor
         let colorBottom = endColor.cgColor
         

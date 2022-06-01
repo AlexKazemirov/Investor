@@ -27,6 +27,10 @@
 		306DC55E28095F67004FF115 /* InvestorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306DC55D28095F67004FF115 /* InvestorUITestsLaunchTests.swift */; };
 		30716BA6281C9E0F0085CD1E /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30716BA5281C9E0F0085CD1E /* AuthViewController.swift */; };
 		30984D09283C2E430002F69C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30984D08283C2E430002F69C /* Constants.swift */; };
+		309D7B6E284817ED001BCB59 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309D7B6D284817ED001BCB59 /* TestViewController.swift */; };
+		309D7B702848180F001BCB59 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309D7B6F2848180F001BCB59 /* PortfolioViewController.swift */; };
+		309D7B722848210F001BCB59 /* PortfoliosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309D7B712848210F001BCB59 /* PortfoliosModel.swift */; };
+		309D7B7628482308001BCB59 /* PortfolioCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309D7B7528482308001BCB59 /* PortfolioCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +75,10 @@
 		306DC55D28095F67004FF115 /* InvestorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		30716BA5281C9E0F0085CD1E /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		30984D08283C2E430002F69C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		309D7B6D284817ED001BCB59 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		309D7B6F2848180F001BCB59 /* PortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
+		309D7B712848210F001BCB59 /* PortfoliosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfoliosModel.swift; sourceTree = "<group>"; };
+		309D7B7528482308001BCB59 /* PortfolioCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				30234038281E8BB400EFF92F /* TabBarController.swift */,
+				309D7B6D284817ED001BCB59 /* TestViewController.swift */,
+				309D7B6F2848180F001BCB59 /* PortfolioViewController.swift */,
 				30276BE4281A9E63009C7B8F /* IdeasViewController.swift */,
 				306DC53B28095F65004FF115 /* СryptoListViewController.swift */,
 				30276BE8281A9E8B009C7B8F /* WatchListViewController.swift */,
@@ -139,8 +149,10 @@
 				306DC53928095F65004FF115 /* SceneDelegate.swift */,
 				306DC53D28095F65004FF115 /* Main.storyboard */,
 				30276BEA281A9FD8009C7B8F /* ViewControllers */,
+				309D7B712848210F001BCB59 /* PortfoliosModel.swift */,
 				30984D08283C2E430002F69C /* Constants.swift */,
 				3006805928096ADC008B7465 /* Models.swift */,
+				309D7B7528482308001BCB59 /* PortfolioCollectionViewCell.swift */,
 				3006805B28096CD3008B7465 /* CryptoTableViewCell.swift */,
 				3006805D28098744008B7465 /* APICaller.swift */,
 				306DC54328095F67004FF115 /* Assets.xcassets */,
@@ -304,15 +316,19 @@
 				3006805C28096CD3008B7465 /* CryptoTableViewCell.swift in Sources */,
 				30276BE5281A9E63009C7B8F /* IdeasViewController.swift in Sources */,
 				30716BA6281C9E0F0085CD1E /* AuthViewController.swift in Sources */,
+				309D7B702848180F001BCB59 /* PortfolioViewController.swift in Sources */,
 				30984D09283C2E430002F69C /* Constants.swift in Sources */,
 				3006805E28098744008B7465 /* APICaller.swift in Sources */,
 				306DC53A28095F65004FF115 /* SceneDelegate.swift in Sources */,
 				306DC54228095F65004FF115 /* Investor.xcdatamodeld in Sources */,
 				30276BE3281A9E54009C7B8F /* ProfileViewController.swift in Sources */,
+				309D7B6E284817ED001BCB59 /* TestViewController.swift in Sources */,
 				30276BE7281A9E70009C7B8F /* EducationViewController.swift in Sources */,
 				3006805A28096ADC008B7465 /* Models.swift in Sources */,
 				30234039281E8BB400EFF92F /* TabBarController.swift in Sources */,
 				30276BE9281A9E8B009C7B8F /* WatchListViewController.swift in Sources */,
+				309D7B722848210F001BCB59 /* PortfoliosModel.swift in Sources */,
+				309D7B7628482308001BCB59 /* PortfolioCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,9 +11,11 @@ import UIKit
 
 class EducationViewController: UIViewController {
 
-//    override func viewDidLayoutSubviews() {
-//        Constants.gradientLayer.frame = CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: self.view.bounds.size.height)
-//    }
+    @IBOutlet weak var coursesCollectionView: UICollectionView! {
+        didSet {
+            coursesCollectionView.backgroundColor = .clear
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
