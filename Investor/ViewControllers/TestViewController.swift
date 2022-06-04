@@ -9,10 +9,7 @@ import UIKit
 import Foundation
 import GoogleSignIn
 
-class TestViewController: UIViewController, GIDSignInDelegate {
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        <#code#>
-    }
+class TestViewController: UIViewController{
     
 
     override func viewDidLoad() {
@@ -20,8 +17,8 @@ class TestViewController: UIViewController, GIDSignInDelegate {
 
         Constants.setGradient(view)
         
-        GIDSignIn.sharedInstance().delegate = self
-        //GIDSignIn.sharedInstance().clientID =
+        //GIDSignIn.sharedInstance().delegate = self
+        GIDSignIn.sharedInstance().clientID = "99997905218-ju1qei0hjpqikd0c8ut3j64q5fbuvkd7.apps.googleusercontent.com"
     }
 
     @IBAction func showResults(_ sender: UIButton) {
