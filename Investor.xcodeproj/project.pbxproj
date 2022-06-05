@@ -232,7 +232,6 @@
 				306DC53128095F65004FF115 /* Frameworks */,
 				306DC53228095F65004FF115 /* Resources */,
 				241A1B74AE84909F83B8E33C /* [CP] Embed Pods Frameworks */,
-				6628013FF4D43824DA56A451 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -271,7 +270,6 @@
 				306DC55428095F67004FF115 /* Frameworks */,
 				306DC55528095F67004FF115 /* Resources */,
 				2E687F5F91244D89342DE158 /* [CP] Embed Pods Frameworks */,
-				AD64FAB5B95231BC6615493C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -430,40 +428,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6628013FF4D43824DA56A451 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Investor/Pods-Investor-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Investor/Pods-Investor-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Investor/Pods-Investor-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AD64FAB5B95231BC6615493C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Investor-InvestorUITests/Pods-Investor-InvestorUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Investor-InvestorUITests/Pods-Investor-InvestorUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Investor-InvestorUITests/Pods-Investor-InvestorUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F0F7C385110B561CAF400F07 /* [CP] Check Pods Manifest.lock */ = {
@@ -695,7 +659,7 @@
 				DEVELOPMENT_TEAM = SC63T9624N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Investor/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = 300$;
+				INFOPLIST_KEY_CFBundleDisplayName = "300$";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -728,7 +692,7 @@
 				DEVELOPMENT_TEAM = SC63T9624N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Investor/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = 300$;
+				INFOPLIST_KEY_CFBundleDisplayName = "300$";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
